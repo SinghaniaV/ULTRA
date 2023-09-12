@@ -30,7 +30,7 @@ ULTRA is a C++ framework for efficient journey planning in multimodal networks c
   [pdf](https://drops.dagstuhl.de/opus/volltexte/2022/17118/pdf/OASIcs-ATMOS-2022-14.pdf)
 
 ## Usage
-Most preprocessing steps and query algorithms are provided in the console application ``ULTRA``. You can compile it with the ``Makefile`` in the ``Runnables`` folder. Type ``make ULTRARelease -B`` to compile in release mode. The following commands are available:
+Most preprocessing steps and query algorithms are provided in the console application ``ULTRA``. You can compile it with the ``Makefile`` in the ``Runnables`` folder. Type ``make ULTRARelease -B`` to compile in release mode (you need g++ and numactl). The following commands are available:
 
 * Contraction Hierarchies (CH) computation:
     - ``buildCH`` performs a regular CH precomputation. The output is used by the (Mc)ULTRA query algorithms for the Bucket-CH searches.

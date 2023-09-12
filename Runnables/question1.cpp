@@ -8,7 +8,7 @@
 
 
 int main() {
-    // reading the graph from a file
+    // reading the file
     FILE* file = IO::openFile("./DIMACS-Graph/USA-road-d.FLA.gr");
 
     // TODO: convert the file to a graph
@@ -17,7 +17,10 @@ int main() {
     const int num_pairs = 200; // Number of random source-destination pairs
     double total_runtime = 0.0;
 
-    // Print the total runtime for the 200 random Dijkstra runs
+    // TODO: run dijkstra for 200 source-target pairs
+    Dijkstra<DimacsGraph> dijkstra();
+
+    // total runtime for the 200 random Dijkstra runs
     std::cout << "Total runtime in seconds for " << num_pairs << " random Dijkstra: " << total_runtime << std::endl;
 
     return 0;
